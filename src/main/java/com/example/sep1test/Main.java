@@ -23,6 +23,7 @@ public class Main
     DataPersistence dataPersistence = new BinaryFilePersister();
 
     dataPersistence.save(projectList);
+    //test
 
 
 
