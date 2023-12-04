@@ -32,7 +32,7 @@ public class Application extends javafx.application.Application
     stage.setOnCloseRequest(event -> {
       // Save data on application close
       DataService.saveData(data, "data.bin");
-      exportToJSON();
+
     });
     stage.show();
 
@@ -45,17 +45,15 @@ public class Application extends javafx.application.Application
       tableViewController.refreshTableView(); //
     }
 
-
-
   }
 
 
   //export to Json
-  public void exportToJSON()
+  public static void exportToJSON()
   {
     List<Residential> data = resTable.getItems();
 
-    DataService.exportToJson(data,"test.json");
+    DataService.exportToJson(data,"web.json");
   }
 
 
@@ -88,7 +86,7 @@ public class Application extends javafx.application.Application
 
   public static void editDataToTable(Residential updatedData) {
     if (resTable != null) {
-      int selectedIndex = getSelectedIndex(); // Assuming getSelectedIndex() returns the index of the selected item
+      int selectedIndex = getSelectedIndex();
 
       if (selectedIndex >= 0) {
         // Get the current list of items in the TableView
@@ -97,7 +95,7 @@ public class Application extends javafx.application.Application
         // Replace the item at the selected index with the updated data
         items.set(selectedIndex, updatedData);
 
-        // Optionally, refresh the TableView to reflect the changes
+        //refresh the TableView to reflect the changes
         resTable.refresh();
 
         System.out.println("Updated data in row " + selectedIndex + ": " + updatedData);

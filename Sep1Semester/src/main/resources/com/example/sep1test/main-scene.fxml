@@ -21,7 +21,7 @@
             <menus>
                 <Menu fx:id="file1Clicked" mnemonicParsing="false" text="Filer">
                     <items>
-                        <MenuItem fx:id="exportItem1clicked" mnemonicParsing="false" text="Eksportér filer" />
+                        <MenuItem fx:id="exportItem1clicked" mnemonicParsing="false" onAction="#export" text="Eksportér filer" />
                         <MenuItem fx:id="addItem1Clicked" mnemonicParsing="false" onAction="#clickNew" text="Tilføj nyt projekt">
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />

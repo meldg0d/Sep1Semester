@@ -1,8 +1,6 @@
 package com.example.sep1test;
 
 
-import com.example.sep1test.DataPersistence.BinaryFilePersister;
-import com.example.sep1test.DataPersistence.DataPersistence;
 import com.example.sep1test.Projects.ProjectList;
 import com.example.sep1test.Projects.Residential;
 
@@ -20,10 +18,6 @@ public class Main
 
     projectList.add(residential);
 
-    DataPersistence dataPersistence = new BinaryFilePersister();
-
-    dataPersistence.save(projectList);
-    //test
 
 
 

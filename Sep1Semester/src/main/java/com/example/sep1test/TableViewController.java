@@ -238,7 +238,12 @@ public class TableViewController implements Initializable
 
   }
 
-  private void export(){
+  //Export to JSON
+  @FXML
+  private void export(ActionEvent e) throws IOException {
+
+    Application.exportToJSON();
+    outputLabel.setText("Data exported to JSON successfully.");
   }
 
   //Just to fill the table with data

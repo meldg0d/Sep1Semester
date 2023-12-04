@@ -1,0 +1,12 @@
+[
+  {
+    "size": 165.0,
+    "numberOfKitchens": 1,
+    "numberOfBathrooms": 2,
+    "numberOfPlumbingRooms": 3,
+    "isNewBuild": true,
+    "nameOfProject": "Naturhuset i Horsen",
+    "budget": "20000",
+    "timeline": 165
+  }
+]
