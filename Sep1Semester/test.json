@@ -1,0 +1,22 @@
+[
+  {
+    "size": 165.0,
+    "numberOfKitchens": 1,
+    "numberOfBathrooms": 2,
+    "numberOfPlumbingRooms": 3,
+    "isNewBuild": true,
+    "nameOfProject": "Naturhuset i Horsens",
+    "budget": "1",
+    "timeline": 2
+  },
+  {
+    "size": 165.0,
+    "numberOfKitchens": 1,
+    "numberOfBathrooms": 2,
+    "numberOfPlumbingRooms": 3,
+    "isNewBuild": true,
+    "nameOfProject": "Naturhuset i Horsens",
+    "budget": "20000",
+    "timeline": 165
+  }
+]
